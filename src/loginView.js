@@ -1,5 +1,5 @@
 import { customerData } from './calls/fetchCustomers.js';
-
+var user = {};
 var loginButon = document.querySelector(".enterUserButton");
 var loginPage = document.querySelector(".loginPage");
 var loginInput = document.querySelector(".userNInput")
@@ -19,6 +19,7 @@ function checkForUsar(name) {
     .then(data => {
       const found = data.filter((x) => x.customers.some((y) => y.name === name));
       if (found.length > 0) {
+        user = name
         loginPage.classList.add('hidden');
         dashBoard.classList.remove('hidden');
       }
