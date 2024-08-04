@@ -7,9 +7,10 @@ body {
 .hidden{
   display:none
 }
+
 .userItems{
-position: fixed;
-  top:130px;
+  position: fixed;
+  top:75px;
   left: 800px;
   background-color: rgba(210, 215, 211,0.25);
   padding:100px;
@@ -21,17 +22,83 @@ position: fixed;
   font-size: 40px;
 
 }
-.userInput{
+.userNInput{
   margin-left: 20px;
   height: 30px;
   width: 400px;
   display:inline-block;
 }
+.paswordLabel{
+  display:block;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 30px;
+}
+.userPInput{
+  margin-left: 20px;
+  height: 30px;
+  width: 352px;
+  display:inline-block;
+}
 .enterUserButton{
-margin-top: 60px;
+  margin-top: 60px;
   height: 60px;
   width: 562px;
   background-color: cornflowerblue;
   font-size: 30px;
 
+}
+
+.dashBoard{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.menu{
+  display:inline-block;
+  border-right:1px solid #000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  padding: 20px;
+}
+.mainPage{
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 240px;
+  right: 0;
+  padding: 20px;
+}
+.logOutButton{
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: lightgray;
+  margin-top: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.historyButton{
+  display:block;
+  width: 200px;
+  height: 50px;
+  background-color: lightgray;
+  margin-top: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.currentButton {
+  display:block;
+  width: 200px;
+  height: 50px;
+  background-color: lightgray;
+  margin-top: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }

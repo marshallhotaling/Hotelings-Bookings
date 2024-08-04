@@ -13,25 +13,43 @@
   <div class="userItems">
     <label class="nameLabel">
       Name :
-      <input type="text" class="userInput">
+      <input type="text" class="userNInput">
+    </label>
+    <label class="paswordLabel">
+      Pasword :
+      <input type="text" class="userPInput">
     </label>
     <button class="enterUserButton">enter</button>
   </div>
 </div>
+<div class="dashBoard hidden">
+  <div class="menu">
+    <div class="logOutButton">Log Out</div>
+    <div class="currentButton">Current</div>
+    <div class="historyButton">History</div>
+  </div>
+  <div class="mainPage">
+    <div class="historyBookingsPage hidden">
+
+    </div>
+    <div class="currentBookingsPage">
+
+    </div>
+  </div>
+</div>
+
+
 
 <div class="historyPage hidden">
 
 </div>
 
-<div class="bookingPage hidden">
-
-</div>
 
 
 
-  
-  <!-- Do not include the scripts.js or class files here - it is done by the webpack server -->
-  <script src="bundle.js"></script>
-<script src="loginView.js"></script>
+
+
+<!-- Do not include the scripts.js or class files here - it is done by the webpack server -->
+<script src="bundle.js"></script>
 </body>
 </html>
