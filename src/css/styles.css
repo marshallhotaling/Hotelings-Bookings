@@ -58,7 +58,7 @@ body {
 }
 .menu{
   display:inline-block;
-  border-right:1px solid #000;
+  border-right:3px solid #000;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -101,4 +101,48 @@ body {
   margin-top: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+}
+.currrentHeading{
+  display:block;
+  text-align: center;
+  font-size: 100px;
+}
+.currentTotal{
+  display: block;
+  text-align: right;
+  font-size: 50px;
+  padding-right: 100px;
+  border-bottom:3px solid #000;
+}
+.currentBookingsData{
+  margin-top: 40px;
+  display: block;
+  text-align: center;
+  font-size: 50px;
+}
+.currentDate{
+  margin-left: 400px;
+  margin-right: 400px;
+}
+.historyHeading{
+  display:block;
+  text-align: center;
+  font-size: 100px;
+}
+.historyTotal{
+  display: block;
+  text-align: right;
+  font-size: 50px;
+  padding-right: 100px;
+  border-bottom:3px solid #000;
+}
+.historyBookingsData{
+  margin-top: 40px;
+  display: block;
+  text-align: center;
+  font-size: 50px;
+}
+.historyDate{
+  margin-left: 400px;
+  margin-right: 400px;
 }
