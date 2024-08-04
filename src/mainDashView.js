@@ -3,7 +3,8 @@ import { roomsData } from './calls/fetchRooms.js';
 import {user} from "./loginView";
 
 
-
+var rooms = []
+var allTotals = 0
 var historyBookingsPage = document.querySelector(".historyBookingsPage")
 var currentBookingsPage = document.querySelector(".currentBookingsPage")
 var logOutButton = document.querySelector(".logOutButton")
@@ -16,6 +17,9 @@ var bookingPage = document.querySelector(".bookingPage")
 var homeButton = document.querySelector(".homeButton")
 var homePage = document.querySelector(".homePage")
 var loginInput = document.querySelector(".userNInput")
+var currentData = document.querySelector(".currentData")
+var currentTotal = document.querySelector(".currentTotal")
+
 
 homeButton.addEventListener('click', homeSwitch)
 logOutButton.addEventListener('click', logOut);
@@ -57,42 +61,61 @@ function hideViews() {
 
 }
 
-function checkForBookings(name) {
-  console.log("loginInput", name)
+function checkForBookings() {
+  checkForRooms()
   Promise.all([
     bookingsData(),
   ])
     .then(data => {
-      console.log("here is bookings", data);
-      // const found = data.filter((x) => x.customers.some((y) => y.name === name));
-      // if (found.length > 0) {
-      //   user = name
-      //   loginPage.classList.add('hidden');
-      //   dashBoard.classList.remove('hidden');
-      // }
+      console.log("here is bookings", data, user.id);
+      const foundBookings = data[0].bookings.filter((item) => {
+        return item.userID === user.id
+      })
+
+      currentData.innerHTML = ""
+      console.log("here",rooms)
+
+      const found = foundBookings.sort((a,b)=>{
+        return b.date - a.date
+      })
+      console.log('bookings filterd', found)
+      
+      for (let i = 0; i < found.length; ++i) {
+        const foundRoom = rooms.filter((item) => {
+          return item.number === found[i].roomNumber
+        })
+        console.log(foundRoom[0])
+
+        currentData.innerHTML += `<label class="currentDate2">${found[i].date}</label> <label class="currentRoomNumber2">${found[i].roomNumber}</label> <label class="currentPrice2">$ ${foundRoom[0].costPerNight.toFixed(2)}</label> `
+        allTotals += foundRoom[0].costPerNight
+
+
+      }
+      currentTotal.innerHTML = `Total: $ ${allTotals.toFixed(2)}`
+
+
+
+
+
+
+
     })
     .catch(err => console.log(err));
 }
 
 
-function checkForRooms(name) {
-  console.log("loginInput", name)
+function checkForRooms() {
   Promise.all([
     roomsData(),
   ])
     .then(data => {
-      console.log("here is rooms", data)
-      // const found = data.filter((x) => x.customers.some((y) => y.name === name));
-      // if (found.length > 0) {
-      //   user = name
-      //   loginPage.classList.add('hidden');
-      //   dashBoard.classList.remove('hidden');
-      // }
+      console.log("here is rooms", data, user.id)
+      rooms = data[0].rooms
     })
     .catch(err => console.log(err));
 }
 
 
 
-checkForBookings(user.id)
-checkForRooms(user.id)
+checkForBookings()
+

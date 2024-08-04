@@ -33,4 +33,4 @@ function checkForUsar(name) {
     .catch(err => console.log(err));
 }
 
-checkForUsar('aa')
+checkForUsar('Leatha Ullrich')
