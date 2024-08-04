@@ -311,7 +311,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nbody {\n  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);\n}\n", "",{"version":3,"sources":["webpack://./src/css/styles.css"],"names":[],"mappings":";AACA;EACE,kFAAkF;AACpF","sourcesContent":["\nbody {\n  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nbody {\n  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);\n}\n\n\n.hidden{\n  display:none\n}\n\n.userItems{\n  position: fixed;\n  top:75px;\n  left: 800px;\n  background-color: rgba(210, 215, 211,0.25);\n  padding:100px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n}\n.nameLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n\n}\n.userNInput{\n  margin-left: 20px;\n  height: 30px;\n  width: 400px;\n  display:inline-block;\n}\n.paswordLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n  margin-top: 30px;\n}\n.userPInput{\n  margin-left: 20px;\n  height: 30px;\n  width: 352px;\n  display:inline-block;\n}\n.enterUserButton{\n  margin-top: 60px;\n  height: 60px;\n  width: 562px;\n  background-color: cornflowerblue;\n  font-size: 30px;\n\n}\n\n.dashBoard{\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n}\n.menu{\n  display:inline-block;\n  border-right:3px solid #000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 200px;\n  padding: 20px;\n}\n.mainPage{\n  display: inline-block;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 240px;\n  right: 0;\n  padding: 20px;\n}\n.homeButton{\n  display: block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.logOutButton{\n  display: block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.historyButton{\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.currentButton {\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.BookingButton{\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.currrentHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.currentTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.currentBookingsData{\n  margin-top: 40px;\n  display: block;\n  text-align: center;\n  font-size: 50px;\n}\n.currentDate{\n  margin-left: 400px;\n  margin-right: 400px;\n}\n.historyHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.historyTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.historyBookingsData{\n  margin-top: 40px;\n  display: block;\n  text-align: center;\n  font-size: 50px;\n}\n.historyDate{\n  margin-left: 400px;\n  margin-right: 400px;\n}\n\n.homePage{\n\n}\n.homeWelcomeHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n\n.bookingPage{\n\n}", "",{"version":3,"sources":["webpack://./src/css/styles.css"],"names":[],"mappings":";AACA;EACE,kFAAkF;AACpF;;;AAGA;EACE;AACF;;AAEA;EACE,eAAe;EACf,QAAQ;EACR,WAAW;EACX,0CAA0C;EAC1C,aAAa;EACb,2CAA2C;AAC7C;AACA;EACE,aAAa;EACb,iBAAiB;EACjB,eAAe;;AAEjB;AACA;EACE,iBAAiB;EACjB,YAAY;EACZ,YAAY;EACZ,oBAAoB;AACtB;AACA;EACE,aAAa;EACb,iBAAiB;EACjB,eAAe;EACf,gBAAgB;AAClB;AACA;EACE,iBAAiB;EACjB,YAAY;EACZ,YAAY;EACZ,oBAAoB;AACtB;AACA;EACE,gBAAgB;EAChB,YAAY;EACZ,YAAY;EACZ,gCAAgC;EAChC,eAAe;;AAEjB;;AAEA;EACE,eAAe;EACf,MAAM;EACN,SAAS;EACT,QAAQ;EACR,OAAO;AACT;AACA;EACE,oBAAoB;EACpB,2BAA2B;EAC3B,eAAe;EACf,MAAM;EACN,SAAS;EACT,OAAO;EACP,YAAY;EACZ,aAAa;AACf;AACA;EACE,qBAAqB;EACrB,eAAe;EACf,MAAM;EACN,SAAS;EACT,WAAW;EACX,QAAQ;EACR,aAAa;AACf;AACA;EACE,cAAc;EACd,YAAY;EACZ,YAAY;EACZ,2BAA2B;EAC3B,gBAAgB;EAChB,2CAA2C;EAC3C,eAAe;AACjB;AACA;EACE,cAAc;EACd,YAAY;EACZ,YAAY;EACZ,2BAA2B;EAC3B,gBAAgB;EAChB,2CAA2C;EAC3C,eAAe;AACjB;AACA;EACE,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,2BAA2B;EAC3B,gBAAgB;EAChB,2CAA2C;EAC3C,eAAe;AACjB;AACA;EACE,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,2BAA2B;EAC3B,gBAAgB;EAChB,2CAA2C;EAC3C,eAAe;AACjB;AACA;EACE,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,2BAA2B;EAC3B,gBAAgB;EAChB,2CAA2C;EAC3C,eAAe;AACjB;AACA;EACE,aAAa;EACb,kBAAkB;EAClB,gBAAgB;AAClB;AACA;EACE,cAAc;EACd,iBAAiB;EACjB,eAAe;EACf,oBAAoB;EACpB,4BAA4B;AAC9B;AACA;EACE,gBAAgB;EAChB,cAAc;EACd,kBAAkB;EAClB,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,kBAAkB;EAClB,gBAAgB;AAClB;AACA;EACE,cAAc;EACd,iBAAiB;EACjB,eAAe;EACf,oBAAoB;EACpB,4BAA4B;AAC9B;AACA;EACE,gBAAgB;EAChB,cAAc;EACd,kBAAkB;EAClB,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;;AAEA;AACA;EACE,aAAa;EACb,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;;AAEA","sourcesContent":["\nbody {\n  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);\n}\n\n\n.hidden{\n  display:none\n}\n\n.userItems{\n  position: fixed;\n  top:75px;\n  left: 800px;\n  background-color: rgba(210, 215, 211,0.25);\n  padding:100px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n}\n.nameLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n\n}\n.userNInput{\n  margin-left: 20px;\n  height: 30px;\n  width: 400px;\n  display:inline-block;\n}\n.paswordLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n  margin-top: 30px;\n}\n.userPInput{\n  margin-left: 20px;\n  height: 30px;\n  width: 352px;\n  display:inline-block;\n}\n.enterUserButton{\n  margin-top: 60px;\n  height: 60px;\n  width: 562px;\n  background-color: cornflowerblue;\n  font-size: 30px;\n\n}\n\n.dashBoard{\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n}\n.menu{\n  display:inline-block;\n  border-right:3px solid #000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 200px;\n  padding: 20px;\n}\n.mainPage{\n  display: inline-block;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 240px;\n  right: 0;\n  padding: 20px;\n}\n.homeButton{\n  display: block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.logOutButton{\n  display: block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.historyButton{\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.currentButton {\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.BookingButton{\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.currrentHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.currentTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.currentBookingsData{\n  margin-top: 40px;\n  display: block;\n  text-align: center;\n  font-size: 50px;\n}\n.currentDate{\n  margin-left: 400px;\n  margin-right: 400px;\n}\n.historyHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.historyTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.historyBookingsData{\n  margin-top: 40px;\n  display: block;\n  text-align: center;\n  font-size: 50px;\n}\n.historyDate{\n  margin-left: 400px;\n  margin-right: 400px;\n}\n\n.homePage{\n\n}\n.homeWelcomeHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n\n.bookingPage{\n\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -434,6 +434,235 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("images/turing-logo.png");
 
+/***/ }),
+/* 12 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   user: () => (/* binding */ user)
+/* harmony export */ });
+/* harmony import */ var _calls_fetchCustomers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+
+
+var user = {};
+var loginButon = document.querySelector(".enterUserButton");
+var loginPage = document.querySelector(".loginPage");
+var loginInput = document.querySelector(".userNInput")
+var dashBoard = document.querySelector(".dashBoard")
+var homePage = document.querySelector(".homePage")
+
+
+loginButon.addEventListener('click', showMainPage);
+
+function showMainPage() {
+  checkForUsar(loginInput.value);
+}
+
+function checkForUsar(name) {
+  console.log("loginInput", name)
+  Promise.all([
+    (0,_calls_fetchCustomers_js__WEBPACK_IMPORTED_MODULE_0__.customerData)(),
+  ])
+    .then(data => {
+      const found = data[0].customers.filter((item) => {
+        return item.name === name
+      })
+      if (found.length > 0) {
+        user = found[0]
+        loginPage.classList.add('hidden');
+        dashBoard.classList.remove('hidden');
+        homePage.classList.remove('hidden');
+      }
+    })
+    .catch(err => console.log(err));
+}
+
+checkForUsar('aa')
+
+/***/ }),
+/* 13 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   customerData: () => (/* binding */ customerData)
+/* harmony export */ });
+const customerData = () => {
+  const data = fetch(
+    `http://localhost:3001/api/v1/customers`
+  )
+    .then(response => {
+      if (!response.ok) {
+        // eslint-disable-next-line max-len
+        throw new Error(`GET ERROR: Response not OK >>> STATUS ${response.status} - ${response.statusText}`)
+      }
+      return response.json()
+    })
+    .then(data => data)
+    // eslint-disable-next-line max-len
+    .catch(error => alert(`GET ERROR >>> STATUS ${error.status} - ${error.statusText}`));
+  return data;
+};
+
+/***/ }),
+/* 14 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _calls_fetchBookings_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _calls_fetchRooms_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
+/* harmony import */ var _loginView__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+
+
+
+
+
+
+var historyBookingsPage = document.querySelector(".historyBookingsPage")
+var currentBookingsPage = document.querySelector(".currentBookingsPage")
+var logOutButton = document.querySelector(".logOutButton")
+var currentButton = document.querySelector(".currentButton")
+var historyButton = document.querySelector(".historyButton")
+var loginPage = document.querySelector(".loginPage")
+var dashBoard = document.querySelector(".dashBoard")
+var BookingButton = document.querySelector(".BookingButton")
+var bookingPage = document.querySelector(".bookingPage")
+var homeButton = document.querySelector(".homeButton")
+var homePage = document.querySelector(".homePage")
+var loginInput = document.querySelector(".userNInput")
+
+homeButton.addEventListener('click', homeSwitch)
+logOutButton.addEventListener('click', logOut);
+historyButton.addEventListener("click", PastSwitch)
+currentButton.addEventListener("click", CurrentSwitch)
+BookingButton.addEventListener("click", bookingSwitch)
+
+
+
+function logOut () {
+  hideViews()
+  loginPage.classList.remove('hidden');
+  dashBoard.classList.add('hidden');
+  //make sure you add for pasword
+  loginInput.value = ""
+}
+function PastSwitch ()  {
+  hideViews()
+  historyBookingsPage.classList.remove("hidden")
+}
+function CurrentSwitch() {
+  hideViews()
+  currentBookingsPage.classList.remove("hidden")
+}
+function bookingSwitch() {
+  hideViews()
+  bookingPage.classList.remove("hidden")
+}
+function homeSwitch() {
+  hideViews()
+  homePage.classList.remove("hidden")
+  console.log("user", _loginView__WEBPACK_IMPORTED_MODULE_2__.user)
+}
+function hideViews() {
+  historyBookingsPage.classList.add("hidden")
+  currentBookingsPage.classList.add("hidden")
+  bookingPage.classList.add("hidden")
+  homePage.classList.add("hidden")
+
+}
+
+function checkForBookings(name) {
+  console.log("loginInput", name)
+  Promise.all([
+    (0,_calls_fetchBookings_js__WEBPACK_IMPORTED_MODULE_0__.bookingsData)(),
+  ])
+    .then(data => {
+      console.log("here is bookings", data);
+      // const found = data.filter((x) => x.customers.some((y) => y.name === name));
+      // if (found.length > 0) {
+      //   user = name
+      //   loginPage.classList.add('hidden');
+      //   dashBoard.classList.remove('hidden');
+      // }
+    })
+    .catch(err => console.log(err));
+}
+
+
+function checkForRooms(name) {
+  console.log("loginInput", name)
+  Promise.all([
+    (0,_calls_fetchRooms_js__WEBPACK_IMPORTED_MODULE_1__.roomsData)(),
+  ])
+    .then(data => {
+      console.log("here is rooms", data)
+      // const found = data.filter((x) => x.customers.some((y) => y.name === name));
+      // if (found.length > 0) {
+      //   user = name
+      //   loginPage.classList.add('hidden');
+      //   dashBoard.classList.remove('hidden');
+      // }
+    })
+    .catch(err => console.log(err));
+}
+
+
+
+checkForBookings(_loginView__WEBPACK_IMPORTED_MODULE_2__.user.id)
+checkForRooms(_loginView__WEBPACK_IMPORTED_MODULE_2__.user.id)
+
+
+/***/ }),
+/* 15 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   bookingsData: () => (/* binding */ bookingsData)
+/* harmony export */ });
+const bookingsData = () => {
+  const data = fetch(
+    `http://localhost:3001/api/v1/bookings`
+  )
+    .then(response => {
+      if (!response.ok) {
+        // eslint-disable-next-line max-len
+        throw new Error(`GET ERROR: Response not OK >>> STATUS ${response.status} - ${response.statusText}`)
+      }
+      return response.json()
+    })
+    .then(data => data)
+    // eslint-disable-next-line max-len
+    .catch(error => alert(`GET ERROR >>> STATUS ${error.status} - ${error.statusText}`));
+  return data;
+};
+
+/***/ }),
+/* 16 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   roomsData: () => (/* binding */ roomsData)
+/* harmony export */ });
+const roomsData = () => {
+  const data = fetch(
+    `http://localhost:3001/api/v1/rooms`
+  )
+    .then(response => {
+      if (!response.ok) {
+        // eslint-disable-next-line max-len
+        throw new Error(`GET ERROR: Response not OK >>> STATUS ${response.status} - ${response.statusText}`)
+      }
+      return response.json()
+    })
+    .then(data => data)
+    // eslint-disable-next-line max-len
+    .catch(error => alert(`GET ERROR >>> STATUS ${error.status} - ${error.statusText}`));
+  return data;
+};
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -514,6 +743,8 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _images_turing_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _loginView_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _mainDashView_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
 // This is the JavaScript entry file - your code begins here
 // Do not delete or rename this file ********
 
@@ -521,6 +752,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // An example of how you tell webpack to use an image (also need to link to it in the index.html)
+
 
 
 

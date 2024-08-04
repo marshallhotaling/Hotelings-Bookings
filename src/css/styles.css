@@ -135,12 +135,32 @@ body {
 .currentBookingsData{
   margin-top: 40px;
   display: block;
-  text-align: center;
+  /*text-align: center;*/
   font-size: 50px;
 }
 .currentDate{
-  margin-left: 400px;
-  margin-right: 400px;
+  width: 400px;
+  display: inline-block;
+}
+.currentDate2{
+  width: 400px;
+  display: inline-block;
+}
+.currentRoomNumber{
+  width: 400px;
+  display: inline-block;
+}
+.currentRoomNumber2{
+  width: 400px;
+  display: inline-block;
+}
+.currentPrice{
+  width: 250px;
+  display: inline-block;
+}
+.currentPrice2{
+  width: 250px;
+  display: inline-block;
 }
 .historyHeading{
   display:block;
@@ -157,12 +177,19 @@ body {
 .historyBookingsData{
   margin-top: 40px;
   display: block;
-  text-align: center;
   font-size: 50px;
 }
 .historyDate{
-  margin-left: 400px;
-  margin-right: 400px;
+  width: 400px;
+  display: inline-block;
+}
+.historyRoomNumber{
+  width: 400px;
+  display: inline-block;
+}
+.historyPrice{
+  width: 250px;
+  display: inline-block;
 }
 
 .homePage{
