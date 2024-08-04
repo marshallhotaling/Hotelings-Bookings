@@ -102,6 +102,15 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
+.BookingButton{
+  display:block;
+  width: 200px;
+  height: 50px;
+  background-color: lightgray;
+  margin-top: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
 .currrentHeading{
   display:block;
   text-align: center;
@@ -145,4 +154,7 @@ body {
 .historyDate{
   margin-left: 400px;
   margin-right: 400px;
+}
+.bookingPage{
+
 }
