@@ -38,11 +38,6 @@ function logOut() {
   loginInput.value = ""
 }
 
-function PastSwitch() {
-  hideViews()
-  historyBookingsPage.classList.remove("hidden")
-}
-
 function CurrentSwitch() {
   allTotals = 0
   checkForBookings()
@@ -89,7 +84,7 @@ function checkForBookings() {
           return item.number === found[i].roomNumber
         })
 
-        currentData.innerHTML += `<label class="currentDate2">${found[i].date}</label> <label class="currentRoomNumber2">${found[i].roomNumber}</label> <label class="currentPrice2">$ ${foundRoom[0].costPerNight.toFixed(2)}</label> `
+        currentData.innerHTML += `<div tabindex=${i} class="dataSeporator"><label class="currentDate2">${found[i].date}</label> <label class="currentRoomNumber2">Room  ${found[i].roomNumber}</label> <label class="currentPrice2">$ ${foundRoom[0].costPerNight.toFixed(2)}</label></div> `
         allTotals += foundRoom[0].costPerNight
 
 
@@ -113,6 +108,11 @@ function checkForRooms() {
 }
 
 function filterForRooms() {
+  const item = new Date(bookedDateInput.value)
+  if(isNaN(item.getFullYear()) || isNaN(item.getMonth() + 1) || isNaN((item.getDate() + 1))){
+    alert("need a proper date");
+    return ;
+  }
   var foundRoomType = [];
 
   if (roomTypeSelector.value === "allRoom") {
@@ -125,7 +125,7 @@ function filterForRooms() {
   currentAvailData.innerHTML = ''
 
 
-  const item = new Date(bookedDateInput.value)
+
   // comment this back to test for no rooms available
   // foundRoomType = []
   if (foundRoomType.length === 0) {
@@ -135,8 +135,8 @@ function filterForRooms() {
   for (let i = 0; i < foundRoomType.length; ++i) {
 
     currentAvailData.innerHTML += `
-<div class="dataSeporator" onclick="selectedRoom( ${user.id}, ${foundRoomType[i].number}, ${item.getFullYear()}, ${item.getMonth() + 1}, ${item.getDate() + 1})">
-<label class="currentDate2">${foundRoomType[i].number}</label> 
+<div tabindex=${i} class="dataSeporator" onclick="selectedRoom( ${user.id}, ${foundRoomType[i].number}, ${item.getFullYear()}, ${item.getMonth() + 1}, ${item.getDate() + 1})" onkeypress="selectedRoom( ${user.id}, ${foundRoomType[i].number}, ${item.getFullYear()}, ${item.getMonth() + 1}, ${item.getDate() + 1})">
+<label class="currentDate2">Room ${foundRoomType[i].number}</label> 
 <label class="currentRoomNumber2">${foundRoomType[i].bedSize}</label> 
 <label class="currentPrice2">$ ${foundRoomType[i].costPerNight.toFixed(2)}</label> 
 </div>
