@@ -12,11 +12,11 @@
   <img src="./images/turing-logo.png" alt="turing logo">
   <div class="userItems">
     <label class="nameLabel">
-      Name :
+      Username :
       <input type="text" class="userNInput">
     </label>
     <label class="paswordLabel">
-      Pasword :
+      Password :
       <input type="text" class="userPInput">
     </label>
     <button class="enterUserButton">enter</button>
@@ -28,14 +28,11 @@
   <div class="menu">
     <div class="homeButton">Home</div>
     <div class="currentButton">Bookings</div>
-    <div class="historyButton">History</div>
     <div class="BookingButton">Book A Room</div>
     <div class="logOutButton">Log Out</div>
   </div>
   <div class="mainPage">
     <div class="currentBookingsPage hidden">
-
-
       <label class="currrentHeading">Current Bookings</label>
       <label class="currentTotal">Total:</label>
       <div class="currentBookingsData">
@@ -60,10 +57,33 @@
 
     </div>
     <div class="homePage">
-      <label class="homeWelcomeHeading">Welcome</label>
+      <label class="homeWelcomeHeading">Dashboard - Welcome</label>
 
     </div>
     <div class="bookingPage hidden">
+      <label class="bookingHeading">Here Is Our Availability</label>
+      <div class="bookingFilterOPtions">
+        <label for="bookedDate">date:</label>
+        <input type="date" id="bookedDate">
+        <label for="roomType">Choose a Room Type:</label>
+        <select id="roomType" >
+          <option value="allRoom">all</option>
+          <option value="single room">single room</option>
+          <option value="junior suite">junior suite</option>
+          <option value="residential suite">residential suite</option>
+          <option value="suite">suite</option>
+        </select>
+        <input class="dataSubmit" type="submit">
+      </div>
+      <div class="availabilityData" onclick="selectedRoom(1)">
+        <label class="availabilityRoomNumber">Room Number</label>
+        <label class="availabilityRoomNumber">Bed Size</label>
+        <label class="availabilityPrice">Price</label>
+
+      </div>
+      <div class="currentAvailData">
+
+      </div>
 
     </div>
   </div>
@@ -72,16 +92,34 @@
 
 
 
-<div class="historyPage hidden">
-
-</div>
-
-
-
-
-
-
 <!-- Do not include the scripts.js or class files here - it is done by the webpack server -->
 <script src="bundle.js"></script>
+<script>
+  function selectedRoom(userId, roomNumber, year, month, day){
+    console.log(userId, roomNumber, year, month, day)
+    const postData = (data) => {
+      return fetch(`http://localhost:3001/api/v1/bookings`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data),
+      })
+              .then(response => {
+                if (response.status !== 201) {
+                  throw new Error(`POST ERROR: Resource not created >>> STATUS ${response.status} - ${response.statusText}`)
+                }
+                return response.json()
+              })
+              .then(data => data)
+              .catch(error => alert(`POST ERROR >>> STATUS ${error.status} - ${error.statusText}`))
+    }
+
+
+    postData({ "userID": userId, "date": year+'/'+month+'/'+day, "roomNumber": roomNumber }).then(() => {
+      alert(`Resurvation for Date of ${year+'/'+month+'/'+day} for Room ${roomNumber} Complete !!`)
+    })
+  }
+</script>
 </body>
 </html>

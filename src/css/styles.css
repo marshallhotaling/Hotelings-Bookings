@@ -93,15 +93,7 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-.historyButton{
-  display:block;
-  width: 200px;
-  height: 50px;
-  background-color: lightgray;
-  margin-top: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-}
+
 .currentButton {
   display:block;
   width: 200px;
@@ -135,7 +127,6 @@ body {
 .currentBookingsData{
   margin-top: 40px;
   display: block;
-  /*text-align: center;*/
   font-size: 50px;
 }
 .currentDate{
@@ -143,6 +134,7 @@ body {
   display: inline-block;
 }
 .currentDate2{
+  cursor: pointer;
   width: 400px;
   display: inline-block;
 }
@@ -151,6 +143,7 @@ body {
   display: inline-block;
 }
 .currentRoomNumber2{
+  cursor: pointer;
   width: 400px;
   display: inline-block;
 }
@@ -159,6 +152,7 @@ body {
   display: inline-block;
 }
 .currentPrice2{
+  cursor: pointer;
   width: 250px;
   display: inline-block;
 }
@@ -203,4 +197,78 @@ body {
 
 .bookingPage{
 
+}
+.bookingHeading{
+  display:block;
+  text-align: center;
+  font-size: 100px;
+}
+.bookingFilterOPtions{
+  display: block;
+  font-size: 50px;
+  padding-right: 100px;
+  border-bottom:3px solid #000;
+}
+#bookedDate{
+  font-size: 25px;
+  width: 200px;
+  height: 40px;
+  background-color: lightgray;
+  margin-top: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.dataSubmit{
+  width: 100px;
+  height: 40px;
+  background-color: lightgray;
+  margin-top: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.availabilityRoomNumber{
+  margin-top: 40px;
+  display: block;
+  font-size: 50px;
+}
+.availabilityDate{
+  width: 250px;
+  display: inline-block;
+}
+.availabilityRoomNumber{
+  width: 400px;
+  display: inline-block;
+}
+.{
+  width: 250px;
+  display: inline-block;
+}
+.availabilityData{
+  display: block;
+  font-size: 50px;
+}
+.dataSeporator{
+  border-bottom:3px solid #000;
+}
+.currentAvailData{
+  margin-top: 20px;
+  font-size: 30px;
+  overflow-y: scroll;
+  height: 400px;
+}
+.currentData{
+  margin-top: 20px;
+  font-size: 30px;
+  overflow-y: scroll;
+  height: 400px;
+}
+.currentBookingsPage {
+  overflow-y: auto;
+}
+.alertNoRooms {
+  display:block;
+  text-align: center;
+  font-size: 100px;
+  font-size: 100px;
 }
