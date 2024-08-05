@@ -45,4 +45,4 @@ function checkForUsar(name, password) {
 }
 
 // Enable this for testing flow without entering user each time
-checkForUsar('Ruth Ebert44', "overlook2021")
+// checkForUsar('Ruth Ebert44', "overlook2021")
