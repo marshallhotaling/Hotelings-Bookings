@@ -1,7 +1,6 @@
-import { bookingsData } from './calls/fetchBookings.js';
-import { roomsData } from './calls/fetchRooms.js';
+import {bookingsData} from './calls/fetchBookings.js';
+import {roomsData} from './calls/fetchRooms.js';
 import {user} from "./loginView";
-
 
 var rooms = []
 var allTotals = 0
@@ -9,7 +8,6 @@ var historyBookingsPage = document.querySelector(".historyBookingsPage")
 var currentBookingsPage = document.querySelector(".currentBookingsPage")
 var logOutButton = document.querySelector(".logOutButton")
 var currentButton = document.querySelector(".currentButton")
-var historyButton = document.querySelector(".historyButton")
 var loginPage = document.querySelector(".loginPage")
 var dashBoard = document.querySelector(".dashBoard")
 var BookingButton = document.querySelector(".BookingButton")
@@ -19,40 +17,49 @@ var homePage = document.querySelector(".homePage")
 var loginInput = document.querySelector(".userNInput")
 var currentData = document.querySelector(".currentData")
 var currentTotal = document.querySelector(".currentTotal")
+var roomTypeSelector = document.querySelector("#roomType")
+var bookedDateInput = document.querySelector("#bookedDate")
+var filterDataSubmit = document.querySelector(".dataSubmit")
+var currentAvailData = document.querySelector(".currentAvailData")
+var userPInput = document.querySelector(".userPInput")
 
 
 homeButton.addEventListener('click', homeSwitch)
 logOutButton.addEventListener('click', logOut);
-historyButton.addEventListener("click", PastSwitch)
 currentButton.addEventListener("click", CurrentSwitch)
 BookingButton.addEventListener("click", bookingSwitch)
+filterDataSubmit.addEventListener('click', filterForRooms)
 
-
-
-function logOut () {
+function logOut() {
   hideViews()
   loginPage.classList.remove('hidden');
   dashBoard.classList.add('hidden');
-  //make sure you add for pasword
+  userPInput.value = ''
   loginInput.value = ""
 }
-function PastSwitch ()  {
+
+function PastSwitch() {
   hideViews()
   historyBookingsPage.classList.remove("hidden")
 }
+
 function CurrentSwitch() {
+  allTotals = 0
+  checkForBookings()
   hideViews()
   currentBookingsPage.classList.remove("hidden")
 }
+
 function bookingSwitch() {
   hideViews()
   bookingPage.classList.remove("hidden")
 }
+
 function homeSwitch() {
   hideViews()
   homePage.classList.remove("hidden")
-  console.log("user", user)
 }
+
 function hideViews() {
   historyBookingsPage.classList.add("hidden")
   currentBookingsPage.classList.add("hidden")
@@ -67,24 +74,20 @@ function checkForBookings() {
     bookingsData(),
   ])
     .then(data => {
-      console.log("here is bookings", data, user.id);
       const foundBookings = data[0].bookings.filter((item) => {
         return item.userID === user.id
       })
 
       currentData.innerHTML = ""
-      console.log("here",rooms)
 
-      const found = foundBookings.sort((a,b)=>{
+      const found = foundBookings.sort((a, b) => {
         return b.date - a.date
       })
-      console.log('bookings filterd', found)
-      
+
       for (let i = 0; i < found.length; ++i) {
         const foundRoom = rooms.filter((item) => {
           return item.number === found[i].roomNumber
         })
-        console.log(foundRoom[0])
 
         currentData.innerHTML += `<label class="currentDate2">${found[i].date}</label> <label class="currentRoomNumber2">${found[i].roomNumber}</label> <label class="currentPrice2">$ ${foundRoom[0].costPerNight.toFixed(2)}</label> `
         allTotals += foundRoom[0].costPerNight
@@ -94,27 +97,53 @@ function checkForBookings() {
       currentTotal.innerHTML = `Total: $ ${allTotals.toFixed(2)}`
 
 
-
-
-
-
-
     })
     .catch(err => console.log(err));
 }
 
-
+// this is to accuses the rooms data
 function checkForRooms() {
   Promise.all([
     roomsData(),
   ])
     .then(data => {
-      console.log("here is rooms", data, user.id)
       rooms = data[0].rooms
     })
     .catch(err => console.log(err));
 }
 
+function filterForRooms() {
+  var foundRoomType = [];
+
+  if (roomTypeSelector.value === "allRoom") {
+    foundRoomType = rooms
+  } else {
+    foundRoomType = rooms.filter((item) => {
+      return item.roomType === roomTypeSelector.value
+    })
+  }
+  currentAvailData.innerHTML = ''
+
+
+  const item = new Date(bookedDateInput.value)
+  // comment this back to test for no rooms available
+  // foundRoomType = []
+  if (foundRoomType.length === 0) {
+    currentAvailData.innerHTML = '<div class="alertNoRooms">We are so sorry, there are no rooms Available on that date.</div>'
+  }
+
+  for (let i = 0; i < foundRoomType.length; ++i) {
+
+    currentAvailData.innerHTML += `
+<div class="dataSeporator" onclick="selectedRoom( ${user.id}, ${foundRoomType[i].number}, ${item.getFullYear()}, ${item.getMonth() + 1}, ${item.getDate() + 1})">
+<label class="currentDate2">${foundRoomType[i].number}</label> 
+<label class="currentRoomNumber2">${foundRoomType[i].bedSize}</label> 
+<label class="currentPrice2">$ ${foundRoomType[i].costPerNight.toFixed(2)}</label> 
+</div>
+`;
+  }
+
+}
 
 
 checkForBookings()
