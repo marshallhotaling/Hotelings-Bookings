@@ -19,17 +19,21 @@
       Password :
       <input type="text" class="userPInput">
     </label>
-    <button class="enterUserButton">enter</button>
+    <button type="button" class="enterUserButton">enter</button>
+  </div>
+  <div class="titleLabel">
+    <label class="title">Hoteling's Bookings</label>
   </div>
 </div>
 
+`
 
 <div class="dashBoard hidden">
   <div class="menu">
-    <div class="homeButton">Home</div>
-    <div class="currentButton">Bookings</div>
-    <div class="BookingButton">Book A Room</div>
-    <div class="logOutButton">Log Out</div>
+    <button type="button"  class="homeButton">Home</button>
+    <button type="button" class="currentButton">Bookings</button>
+    <button type="button" class="BookingButton">Book A Room</button>
+    <button type="button" class="logOutButton">Log Out</button>
   </div>
   <div class="mainPage">
     <div class="currentBookingsPage hidden">
@@ -73,7 +77,7 @@
           <option value="residential suite">residential suite</option>
           <option value="suite">suite</option>
         </select>
-        <input class="dataSubmit" type="submit">
+        <input value="submit" class="dataSubmit" type="submit">
       </div>
       <div class="availabilityData" onclick="selectedRoom(1)">
         <label class="availabilityRoomNumber">Room Number</label>
@@ -98,6 +102,7 @@
   // post to the dattaBase
   function selectedRoom(userId, roomNumber, year, month, day){
     console.log(userId, roomNumber, year, month, day)
+
     const postData = (data) => {
       return fetch(`http://localhost:3001/api/v1/bookings`, {
         method: 'POST',

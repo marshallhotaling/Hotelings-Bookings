@@ -16,6 +16,10 @@ function showMainPage() {
 }
 
 function checkForUsar(name, password) {
+  if (name === "" || password === "") {
+    alert("username or password is incorrect ");
+    return;
+  }
   // get numbers from username string
   var numb = name.match(/\d/g);
   numb = numb.join("");
