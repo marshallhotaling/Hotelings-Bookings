@@ -12,23 +12,31 @@ loginButon.addEventListener('click', showMainPage);
 
 function showMainPage() {
   console.log(loginInput.value, userPInput.value)
-  checkForUsar(loginInput.value, userPInput.value);
+  checkHasUser(loginInput.value, userPInput.value);
 }
 
-function checkForUsar(name, password) {
+function seperateName(name, numb) {
+  return name.replace(numb, '');
+}
+
+function seperateNumber(name) {
+  var numb = name.match(/\d/g);
+  return numb.join("");
+}
+
+function checkHasUser(name, password) {
   if (name === "" || password === "") {
     alert("username or password is incorrect ");
-    return;
+    return false;
   }
   // get numbers from username string
-  var numb = name.match(/\d/g);
-  numb = numb.join("");
+  const idNumber = seperateNumber(name)
   // remove numbers from username
-  const username = name.replace(numb, '');
+  const username = seperateName(name, idNumber)
   // check for password match
   if (password !== "overlook2021" ) {
     alert("username or password is incorrect ");
-    return;
+    return false;
   }
   //check if user exists in DB
   Promise.all([
@@ -43,10 +51,12 @@ function checkForUsar(name, password) {
         loginPage.classList.add('hidden');
         dashBoard.classList.remove('hidden');
         homePage.classList.remove('hidden');
+        return true;
       }
+      return false
     })
     .catch(err => console.log(err));
 }
 
 // Enable this for testing flow without entering user each time
-// checkForUsar('Ruth Ebert44', "overlook2021")
+checkHasUser('Ruth Ebert44', "overlook2021")

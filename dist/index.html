@@ -98,34 +98,5 @@
 
 <!-- Do not include the scripts.js or class files here - it is done by the webpack server -->
 <script src="bundle.js"></script>
-<script>
-  // post to the dattaBase
-  function selectedRoom(userId, roomNumber, year, month, day){
-    console.log(userId, roomNumber, year, month, day)
-
-    const postData = (data) => {
-      return fetch(`http://localhost:3001/api/v1/bookings`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data),
-      })
-              .then(response => {
-                if (response.status !== 201) {
-                  throw new Error(`POST ERROR: Resource not created >>> STATUS ${response.status} - ${response.statusText}`)
-                }
-                return response.json()
-              })
-              .then(data => data)
-              .catch(error => alert(`POST ERROR >>> STATUS ${error.status} - ${error.statusText}`))
-    }
-
-
-    postData({ "userID": userId, "date": year+'/'+month+'/'+day, "roomNumber": roomNumber }).then(() => {
-      alert(`Resurvation for Date of ${year+'/'+month+'/'+day} for Room ${roomNumber} Complete !!`)
-    })
-  }
-</script>
 </body>
 </html>

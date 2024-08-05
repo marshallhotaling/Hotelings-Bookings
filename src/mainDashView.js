@@ -1,5 +1,6 @@
 import {bookingsData} from './calls/fetchBookings.js';
 import {roomsData} from './calls/fetchRooms.js';
+import {postData} from './calls/postResurvation';
 import {user} from "./loginView";
 
 var rooms = []
@@ -60,11 +61,12 @@ function hideViews() {
   currentBookingsPage.classList.add("hidden")
   bookingPage.classList.add("hidden")
   homePage.classList.add("hidden")
-
 }
 
-function checkForBookings() {
-  checkForRooms()
+function checkForBookings(userObject) {
+
+  console.log('userObject', userObject)
+  getAllRooms()
   Promise.all([
     bookingsData(),
   ])
@@ -91,20 +93,37 @@ function checkForBookings() {
       }
       currentTotal.innerHTML = `Total: $ ${allTotals.toFixed(2)}`
 
-
+      return foundBookings
     })
     .catch(err => console.log(err));
 }
 
-// this is to accuses the rooms data
-function checkForRooms() {
+// this is to access the rooms data
+function getAllRooms() {
   Promise.all([
     roomsData(),
   ])
     .then(data => {
       rooms = data[0].rooms
+      return rooms
     })
     .catch(err => console.log(err));
+}
+
+// post to the dattaBase
+function selectedRoom(userId, roomNumber, year, month, day){
+  console.log('selectedRoom', userId, roomNumber, year, month, day)
+  const holder = {
+    "userID": +userId,
+    "date": year + '/' + month + '/' + day,
+    "roomNumber": +roomNumber
+  }
+  //Here is where we use the post
+  postData(holder).then(() => {
+    alert(`Resurvation for Date of ${year + '/' + month + '/' + day} for Room ${roomNumber} Complete !!`)
+    // then re fetched for bookings
+    checkForBookings(user)
+  })
 }
 
 function filterForRooms() {
@@ -124,8 +143,6 @@ function filterForRooms() {
   }
   currentAvailData.innerHTML = ''
 
-
-
   // comment this back to test for no rooms available
   // foundRoomType = []
   if (foundRoomType.length === 0) {
@@ -133,14 +150,22 @@ function filterForRooms() {
   }
 
   for (let i = 0; i < foundRoomType.length; ++i) {
-
-    currentAvailData.innerHTML += `
-<div tabindex=${i} class="dataSeporator" onclick="selectedRoom( ${user.id}, ${foundRoomType[i].number}, ${item.getFullYear()}, ${item.getMonth() + 1}, ${item.getDate() + 1})" onkeypress="selectedRoom( ${user.id}, ${foundRoomType[i].number}, ${item.getFullYear()}, ${item.getMonth() + 1}, ${item.getDate() + 1})">
+    var b=document.createElement('b')
+    b.value=i
+    b.onclick = function() {
+      selectedRoom( `${user.id}`, `${foundRoomType[i].number}`, `${item.getFullYear()}`, `${item.getMonth() + 1}`, `${item.getDate() + 1}`)
+    }
+    b.onkeypress = function() {
+      selectedRoom( `${user.id}`, `${foundRoomType[i].number}`, `${item.getFullYear()}`, `${item.getMonth() + 1}`, `${item.getDate() + 1}`)
+    }
+    b.innerHTML=`
+<div tabindex=${i} class="dataSeporator">
 <label class="currentDate2">Room ${foundRoomType[i].number}</label> 
 <label class="currentRoomNumber2">${foundRoomType[i].bedSize}</label> 
 <label class="currentPrice2">$ ${foundRoomType[i].costPerNight.toFixed(2)}</label> 
 </div>
-`;
+`
+    currentAvailData.appendChild(b)
   }
 
 }
