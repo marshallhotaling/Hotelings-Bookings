@@ -48,4 +48,4 @@ function checkHasUser(name, password) {
 }
 
 // Enable this for testing flow without entering user each time
-checkHasUser('Ruth Ebert44', "overlook2021")
+// checkHasUser('Ruth Ebert44', "overlook2021")
