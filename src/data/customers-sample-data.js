@@ -8,11 +8,7 @@ export const basUserObject =
     "id": 99,
     "name": "James Bond"
   }
-
 export const goodUserName = 'Era Hand8'
-export const badUserName = 'Era Hand'
-export const goodUserPasswrod = 'overlook2021'
-export const badUserPasswrod = "overlook2020"
 
 export const customerSampleData = [{
   "customers": [

@@ -1,5 +1,4 @@
 export const postData = (data) => {
-  console.log('data', data)
   return fetch(`http://localhost:3001/api/v1/bookings`, {
     method: 'POST',
     headers: {

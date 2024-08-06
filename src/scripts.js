@@ -9,4 +9,3 @@ import './images/turing-logo.png'
 import './loginView.js'
 import './mainDashView.js'
 
-console.log('This is the JavaScript entry file - your code begins here.');
