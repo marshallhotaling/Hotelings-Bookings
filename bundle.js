@@ -311,7 +311,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nbody {\n  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);\n}\n\n\n.hidden{\n  display:none\n}\n\n.userItems{\n  position: fixed;\n  top:75px;\n  left: 800px;\n  background-color: rgba(210, 215, 211,0.25);\n  padding:100px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n}\n.nameLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n\n}\n.userNInput{\n  margin-left: 20px;\n  height: 30px;\n  width: 400px;\n  display:inline-block;\n}\n.paswordLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n  margin-top: 30px;\n}\n.userPInput{\n  margin-left: 20px;\n  height: 30px;\n  width: 352px;\n  display:inline-block;\n}\n.enterUserButton{\n  margin-top: 60px;\n  height: 60px;\n  width: 562px;\n  background-color: cornflowerblue;\n  font-size: 30px;\n\n}\n\n.dashBoard{\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n}\n.menu{\n  display:inline-block;\n  border-right:3px solid #000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 200px;\n  padding: 20px;\n}\n.mainPage{\n  display: inline-block;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 240px;\n  right: 0;\n  padding: 20px;\n}\n.homeButton{\n  display: block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.logOutButton{\n  display: block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.historyButton{\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.currentButton {\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.BookingButton{\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.currrentHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.currentTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.currentBookingsData{\n  margin-top: 40px;\n  display: block;\n  text-align: center;\n  font-size: 50px;\n}\n.currentDate{\n  margin-left: 400px;\n  margin-right: 400px;\n}\n.historyHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.historyTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.historyBookingsData{\n  margin-top: 40px;\n  display: block;\n  text-align: center;\n  font-size: 50px;\n}\n.historyDate{\n  margin-left: 400px;\n  margin-right: 400px;\n}\n\n.homePage{\n\n}\n.homeWelcomeHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n\n.bookingPage{\n\n}", "",{"version":3,"sources":["webpack://./src/css/styles.css"],"names":[],"mappings":";AACA;EACE,kFAAkF;AACpF;;;AAGA;EACE;AACF;;AAEA;EACE,eAAe;EACf,QAAQ;EACR,WAAW;EACX,0CAA0C;EAC1C,aAAa;EACb,2CAA2C;AAC7C;AACA;EACE,aAAa;EACb,iBAAiB;EACjB,eAAe;;AAEjB;AACA;EACE,iBAAiB;EACjB,YAAY;EACZ,YAAY;EACZ,oBAAoB;AACtB;AACA;EACE,aAAa;EACb,iBAAiB;EACjB,eAAe;EACf,gBAAgB;AAClB;AACA;EACE,iBAAiB;EACjB,YAAY;EACZ,YAAY;EACZ,oBAAoB;AACtB;AACA;EACE,gBAAgB;EAChB,YAAY;EACZ,YAAY;EACZ,gCAAgC;EAChC,eAAe;;AAEjB;;AAEA;EACE,eAAe;EACf,MAAM;EACN,SAAS;EACT,QAAQ;EACR,OAAO;AACT;AACA;EACE,oBAAoB;EACpB,2BAA2B;EAC3B,eAAe;EACf,MAAM;EACN,SAAS;EACT,OAAO;EACP,YAAY;EACZ,aAAa;AACf;AACA;EACE,qBAAqB;EACrB,eAAe;EACf,MAAM;EACN,SAAS;EACT,WAAW;EACX,QAAQ;EACR,aAAa;AACf;AACA;EACE,cAAc;EACd,YAAY;EACZ,YAAY;EACZ,2BAA2B;EAC3B,gBAAgB;EAChB,2CAA2C;EAC3C,eAAe;AACjB;AACA;EACE,cAAc;EACd,YAAY;EACZ,YAAY;EACZ,2BAA2B;EAC3B,gBAAgB;EAChB,2CAA2C;EAC3C,eAAe;AACjB;AACA;EACE,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,2BAA2B;EAC3B,gBAAgB;EAChB,2CAA2C;EAC3C,eAAe;AACjB;AACA;EACE,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,2BAA2B;EAC3B,gBAAgB;EAChB,2CAA2C;EAC3C,eAAe;AACjB;AACA;EACE,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,2BAA2B;EAC3B,gBAAgB;EAChB,2CAA2C;EAC3C,eAAe;AACjB;AACA;EACE,aAAa;EACb,kBAAkB;EAClB,gBAAgB;AAClB;AACA;EACE,cAAc;EACd,iBAAiB;EACjB,eAAe;EACf,oBAAoB;EACpB,4BAA4B;AAC9B;AACA;EACE,gBAAgB;EAChB,cAAc;EACd,kBAAkB;EAClB,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,kBAAkB;EAClB,gBAAgB;AAClB;AACA;EACE,cAAc;EACd,iBAAiB;EACjB,eAAe;EACf,oBAAoB;EACpB,4BAA4B;AAC9B;AACA;EACE,gBAAgB;EAChB,cAAc;EACd,kBAAkB;EAClB,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;;AAEA;AACA;EACE,aAAa;EACb,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;;AAEA","sourcesContent":["\nbody {\n  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);\n}\n\n\n.hidden{\n  display:none\n}\n\n.userItems{\n  position: fixed;\n  top:75px;\n  left: 800px;\n  background-color: rgba(210, 215, 211,0.25);\n  padding:100px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n}\n.nameLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n\n}\n.userNInput{\n  margin-left: 20px;\n  height: 30px;\n  width: 400px;\n  display:inline-block;\n}\n.paswordLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n  margin-top: 30px;\n}\n.userPInput{\n  margin-left: 20px;\n  height: 30px;\n  width: 352px;\n  display:inline-block;\n}\n.enterUserButton{\n  margin-top: 60px;\n  height: 60px;\n  width: 562px;\n  background-color: cornflowerblue;\n  font-size: 30px;\n\n}\n\n.dashBoard{\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n}\n.menu{\n  display:inline-block;\n  border-right:3px solid #000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 200px;\n  padding: 20px;\n}\n.mainPage{\n  display: inline-block;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 240px;\n  right: 0;\n  padding: 20px;\n}\n.homeButton{\n  display: block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.logOutButton{\n  display: block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.historyButton{\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.currentButton {\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.BookingButton{\n  display:block;\n  width: 200px;\n  height: 50px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.currrentHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.currentTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.currentBookingsData{\n  margin-top: 40px;\n  display: block;\n  text-align: center;\n  font-size: 50px;\n}\n.currentDate{\n  margin-left: 400px;\n  margin-right: 400px;\n}\n.historyHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.historyTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.historyBookingsData{\n  margin-top: 40px;\n  display: block;\n  text-align: center;\n  font-size: 50px;\n}\n.historyDate{\n  margin-left: 400px;\n  margin-right: 400px;\n}\n\n.homePage{\n\n}\n.homeWelcomeHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n\n.bookingPage{\n\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nbody {\n  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);\n}\n\n\n.hidden{\n  display:none\n}\n\n.userItems{\n  position: fixed;\n  top:150px;\n  left: 640px;\n  background-color: rgba(210, 215, 211,0.25);\n  padding:50px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);\n}\n.nameLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n\n}\n.userNInput{\n  margin-left: 20px;\n  height: 30px;\n  width: 350px;\n  display:inline-block;\n}\n.paswordLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n  margin-top: 28px;\n}\n.userPInput{\n  margin-left: 25px;\n  height: 30px;\n  width: 350px;\n  display:inline-block;\n}\n.enterUserButton{\n  margin-top: 50px;\n  height: 60px;\n  width: 562px;\n  background-color: cornflowerblue;\n  font-size: 30px;\n\n}\n.titleLabel{\n  position: fixed;\n  top:10px;\n  display: inline-block;\n  text-align: center;\n}\n.title{\n  font-size: 100px;\n}\n\n.dashBoard{\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n}\n.menu{\n  text-align: center;\n  display:inline-block;\n  border-right:3px solid #000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 200px;\n  padding: 20px;\n}\n.mainPage{\n  display: inline-block;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 240px;\n  right: 0;\n  padding: 20px;\n}\n.homeButton{\n  padding-top: 10px;\n  font-size: 30px;\n  display: block;\n  width: 200px;\n  height: 50px;\n  background-color: cornflowerblue;\n  margin-top: 10px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.logOutButton{\n  display: block;\n  padding-top: 10px;\n  font-size: 30px;\n  width: 200px;\n  height: 50px;\n  background-color: cornflowerblue;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n\n.currentButton {\n  display:block;\n  padding-top: 10px;\n  font-size: 30px;\n  width: 200px;\n  height: 50px;\n  background-color: cornflowerblue;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.BookingButton{\n  display:block;\n  padding-top: 10px;\n  font-size: 30px;\n  width: 200px;\n  height: 50px;\n  background-color: cornflowerblue;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.currrentHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.currentTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.currentBookingsData{\n  margin-top: 40px;\n  display: block;\n  font-size: 50px;\n}\n.currentDate{\n  width: 400px;\n  display: inline-block;\n}\n.currentDate2{\n  cursor: pointer;\n  width: 400px;\n  display: inline-block;\n}\n.currentRoomNumber{\n  width: 400px;\n  display: inline-block;\n}\n.currentRoomNumber2{\n  cursor: pointer;\n  width: 400px;\n  display: inline-block;\n}\n.currentPrice{\n  width: 250px;\n  display: inline-block;\n}\n.currentPrice2{\n  cursor: pointer;\n  width: 250px;\n  display: inline-block;\n}\n.historyHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.historyTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.historyBookingsData{\n  margin-top: 40px;\n  display: block;\n  font-size: 50px;\n}\n.historyDate{\n  width: 400px;\n  display: inline-block;\n}\n.historyRoomNumber{\n  width: 400px;\n  display: inline-block;\n}\n.historyPrice{\n  width: 250px;\n  display: inline-block;\n}\n\n.homePage{\n\n}\n.homeWelcomeHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n\n.bookingPage{\n\n}\n.bookingHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.bookingFilterOPtions{\n  display: block;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n#bookedDate{\n  font-size: 25px;\n  width: 200px;\n  height: 40px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n  margin-bottom: 20px;\n}\n\n.dataSubmit{\n  width: 100px;\n  height: 40px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n  margin-bottom: 20px;\n  margin-left: 20px;\n}\n.availabilityRoomNumber{\n  margin-top: 40px;\n  display: block;\n  font-size: 50px;\n}\n.availabilityDate{\n  width: 250px;\n  display: inline-block;\n}\n.availabilityRoomNumber{\n  width: 400px;\n  display: inline-block;\n}\n/*.{*/\n/*  width: 250px;*/\n/*  display: inline-block;*/\n/*}*/\n.availabilityData{\n  display: block;\n  font-size: 50px;\n}\n.dataSeporator{\n  border-bottom:3px solid #000;\n}\n.currentAvailData{\n  margin-top: 20px;\n  font-size: 30px;\n  overflow-y: scroll;\n  height: 400px;\n}\n.currentData{\n  margin-top: 20px;\n  font-size: 30px;\n  overflow-y: scroll;\n  height: 400px;\n}\n.currentBookingsPage {\n  overflow-y: auto;\n}\n.alertNoRooms {\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n#roomType{\n  font-size: 25px;\n  width: 200px;\n  height: 40px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n  margin-bottom: 20px;\n}", "",{"version":3,"sources":["webpack://./src/css/styles.css"],"names":[],"mappings":"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","sourcesContent":["\nbody {\n  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);\n}\n\n\n.hidden{\n  display:none\n}\n\n.userItems{\n  position: fixed;\n  top:150px;\n  left: 640px;\n  background-color: rgba(210, 215, 211,0.25);\n  padding:50px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);\n}\n.nameLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n\n}\n.userNInput{\n  margin-left: 20px;\n  height: 30px;\n  width: 350px;\n  display:inline-block;\n}\n.paswordLabel{\n  display:block;\n  font-weight: bold;\n  font-size: 40px;\n  margin-top: 28px;\n}\n.userPInput{\n  margin-left: 25px;\n  height: 30px;\n  width: 350px;\n  display:inline-block;\n}\n.enterUserButton{\n  margin-top: 50px;\n  height: 60px;\n  width: 562px;\n  background-color: cornflowerblue;\n  font-size: 30px;\n\n}\n.titleLabel{\n  position: fixed;\n  top:10px;\n  display: inline-block;\n  text-align: center;\n}\n.title{\n  font-size: 100px;\n}\n\n.dashBoard{\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n}\n.menu{\n  text-align: center;\n  display:inline-block;\n  border-right:3px solid #000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 200px;\n  padding: 20px;\n}\n.mainPage{\n  display: inline-block;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 240px;\n  right: 0;\n  padding: 20px;\n}\n.homeButton{\n  padding-top: 10px;\n  font-size: 30px;\n  display: block;\n  width: 200px;\n  height: 50px;\n  background-color: cornflowerblue;\n  margin-top: 10px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.logOutButton{\n  display: block;\n  padding-top: 10px;\n  font-size: 30px;\n  width: 200px;\n  height: 50px;\n  background-color: cornflowerblue;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n\n.currentButton {\n  display:block;\n  padding-top: 10px;\n  font-size: 30px;\n  width: 200px;\n  height: 50px;\n  background-color: cornflowerblue;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.BookingButton{\n  display:block;\n  padding-top: 10px;\n  font-size: 30px;\n  width: 200px;\n  height: 50px;\n  background-color: cornflowerblue;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n}\n.currrentHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.currentTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.currentBookingsData{\n  margin-top: 40px;\n  display: block;\n  font-size: 50px;\n}\n.currentDate{\n  width: 400px;\n  display: inline-block;\n}\n.currentDate2{\n  cursor: pointer;\n  width: 400px;\n  display: inline-block;\n}\n.currentRoomNumber{\n  width: 400px;\n  display: inline-block;\n}\n.currentRoomNumber2{\n  cursor: pointer;\n  width: 400px;\n  display: inline-block;\n}\n.currentPrice{\n  width: 250px;\n  display: inline-block;\n}\n.currentPrice2{\n  cursor: pointer;\n  width: 250px;\n  display: inline-block;\n}\n.historyHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.historyTotal{\n  display: block;\n  text-align: right;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n.historyBookingsData{\n  margin-top: 40px;\n  display: block;\n  font-size: 50px;\n}\n.historyDate{\n  width: 400px;\n  display: inline-block;\n}\n.historyRoomNumber{\n  width: 400px;\n  display: inline-block;\n}\n.historyPrice{\n  width: 250px;\n  display: inline-block;\n}\n\n.homePage{\n\n}\n.homeWelcomeHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n\n.bookingPage{\n\n}\n.bookingHeading{\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n.bookingFilterOPtions{\n  display: block;\n  font-size: 50px;\n  padding-right: 100px;\n  border-bottom:3px solid #000;\n}\n#bookedDate{\n  font-size: 25px;\n  width: 200px;\n  height: 40px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n  margin-bottom: 20px;\n}\n\n.dataSubmit{\n  width: 100px;\n  height: 40px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n  margin-bottom: 20px;\n  margin-left: 20px;\n}\n.availabilityRoomNumber{\n  margin-top: 40px;\n  display: block;\n  font-size: 50px;\n}\n.availabilityDate{\n  width: 250px;\n  display: inline-block;\n}\n.availabilityRoomNumber{\n  width: 400px;\n  display: inline-block;\n}\n/*.{*/\n/*  width: 250px;*/\n/*  display: inline-block;*/\n/*}*/\n.availabilityData{\n  display: block;\n  font-size: 50px;\n}\n.dataSeporator{\n  border-bottom:3px solid #000;\n}\n.currentAvailData{\n  margin-top: 20px;\n  font-size: 30px;\n  overflow-y: scroll;\n  height: 400px;\n}\n.currentData{\n  margin-top: 20px;\n  font-size: 30px;\n  overflow-y: scroll;\n  height: 400px;\n}\n.currentBookingsPage {\n  overflow-y: auto;\n}\n.alertNoRooms {\n  display:block;\n  text-align: center;\n  font-size: 100px;\n}\n#roomType{\n  font-size: 25px;\n  width: 200px;\n  height: 40px;\n  background-color: lightgray;\n  margin-top: 10px;\n  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);\n  cursor: pointer;\n  margin-bottom: 20px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -443,6 +443,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   user: () => (/* binding */ user)
 /* harmony export */ });
 /* harmony import */ var _calls_fetchCustomers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+/* harmony import */ var _sharedFunctions_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
+
+
 
 
 var user = {};
@@ -451,25 +454,37 @@ var loginPage = document.querySelector(".loginPage");
 var loginInput = document.querySelector(".userNInput")
 var dashBoard = document.querySelector(".dashBoard")
 var homePage = document.querySelector(".homePage")
-
+var userPInput = document.querySelector(".userPInput")
 
 loginButon.addEventListener('click', showMainPage);
 
 function showMainPage() {
-  checkForUsar(loginInput.value);
+  checkHasUser(loginInput.value, userPInput.value);
 }
 
-function checkForUsar(name) {
-  console.log("loginInput", name)
+function checkHasUser(name, password) {
+  if (name === "" || password === "") {
+    alert("username or password is incorrect ");
+    return false;
+  }
+  // get numbers from username string
+  const idNumber = (0,_sharedFunctions_js__WEBPACK_IMPORTED_MODULE_1__.seperateNumber)(name)
+  // remove numbers from username
+  const username = (0,_sharedFunctions_js__WEBPACK_IMPORTED_MODULE_1__.seperateName)(name, idNumber)
+  // check for password match
+  if (password !== "overlook2021" ) {
+    alert("username or password is incorrect ");
+    return false;
+  }
+  //check if user exists in DB
   Promise.all([
     (0,_calls_fetchCustomers_js__WEBPACK_IMPORTED_MODULE_0__.customerData)(),
   ])
     .then(data => {
-      const found = data[0].customers.filter((item) => {
-        return item.name === name
-      })
-      if (found.length > 0) {
-        user = found[0]
+
+      const doesHaveUser = (0,_sharedFunctions_js__WEBPACK_IMPORTED_MODULE_1__.hasUser)(data, username)
+      if (doesHaveUser !== false) {
+        user = doesHaveUser[0]
         loginPage.classList.add('hidden');
         dashBoard.classList.remove('hidden');
         homePage.classList.remove('hidden');
@@ -478,7 +493,8 @@ function checkForUsar(name) {
     .catch(err => console.log(err));
 }
 
-checkForUsar('aa')
+// Enable this for testing flow without entering user each time
+// checkHasUser('Ruth Ebert44', "overlook2021")
 
 /***/ }),
 /* 13 */
@@ -510,20 +526,65 @@ const customerData = () => {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _calls_fetchBookings_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
-/* harmony import */ var _calls_fetchRooms_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
-/* harmony import */ var _loginView__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   hasRoomNumber: () => (/* binding */ hasRoomNumber),
+/* harmony export */   hasUser: () => (/* binding */ hasUser),
+/* harmony export */   seperateName: () => (/* binding */ seperateName),
+/* harmony export */   seperateNumber: () => (/* binding */ seperateNumber)
+/* harmony export */ });
+function seperateName(name, numb) {
+  return name.replace(numb, '');
+}
+
+function seperateNumber(name) {
+  var numb = name.match(/\d/g);
+  return numb.join("");
+}
+
+function hasUser(data, username) {
+  const found = data[0].customers.filter((item) => {
+    return item.name === username
+  })
+
+  if (found.length > 0) {
+    return found;
+  }
+  return false
+}
+
+function hasRoomNumber(data, user) {
+  const foundBookings = data[0].bookings.filter((item) => {
+    return item.userID === user.id
+  })
+  if (foundBookings.length > 0) {
+
+    return foundBookings
+  }
+  return false
+}
+
+/***/ }),
+/* 15 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _calls_fetchBookings_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _calls_fetchRooms_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17);
+/* harmony import */ var _calls_postResurvation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(18);
+/* harmony import */ var _loginView__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
+/* harmony import */ var _sharedFunctions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(14);
 
 
 
 
 
 
+var rooms = []
+var allTotals = 0
 var historyBookingsPage = document.querySelector(".historyBookingsPage")
 var currentBookingsPage = document.querySelector(".currentBookingsPage")
 var logOutButton = document.querySelector(".logOutButton")
 var currentButton = document.querySelector(".currentButton")
-var historyButton = document.querySelector(".historyButton")
 var loginPage = document.querySelector(".loginPage")
 var dashBoard = document.querySelector(".dashBoard")
 var BookingButton = document.querySelector(".BookingButton")
@@ -531,90 +592,162 @@ var bookingPage = document.querySelector(".bookingPage")
 var homeButton = document.querySelector(".homeButton")
 var homePage = document.querySelector(".homePage")
 var loginInput = document.querySelector(".userNInput")
+var currentData = document.querySelector(".currentData")
+var currentTotal = document.querySelector(".currentTotal")
+var roomTypeSelector = document.querySelector("#roomType")
+var bookedDateInput = document.querySelector("#bookedDate")
+var filterDataSubmit = document.querySelector(".dataSubmit")
+var currentAvailData = document.querySelector(".currentAvailData")
+var userPInput = document.querySelector(".userPInput")
+
 
 homeButton.addEventListener('click', homeSwitch)
 logOutButton.addEventListener('click', logOut);
-historyButton.addEventListener("click", PastSwitch)
 currentButton.addEventListener("click", CurrentSwitch)
 BookingButton.addEventListener("click", bookingSwitch)
+filterDataSubmit.addEventListener('click', filterForRooms)
 
-
-
-function logOut () {
+function logOut() {
   hideViews()
   loginPage.classList.remove('hidden');
   dashBoard.classList.add('hidden');
-  //make sure you add for pasword
+  userPInput.value = ''
   loginInput.value = ""
 }
-function PastSwitch ()  {
-  hideViews()
-  historyBookingsPage.classList.remove("hidden")
-}
+
 function CurrentSwitch() {
+  allTotals = 0
+  checkForBookings()
   hideViews()
   currentBookingsPage.classList.remove("hidden")
 }
+
 function bookingSwitch() {
   hideViews()
   bookingPage.classList.remove("hidden")
 }
+
 function homeSwitch() {
   hideViews()
   homePage.classList.remove("hidden")
-  console.log("user", _loginView__WEBPACK_IMPORTED_MODULE_2__.user)
 }
+
 function hideViews() {
   historyBookingsPage.classList.add("hidden")
   currentBookingsPage.classList.add("hidden")
   bookingPage.classList.add("hidden")
   homePage.classList.add("hidden")
-
 }
 
-function checkForBookings(name) {
-  console.log("loginInput", name)
+function checkForBookings() {
+  getAllRooms()
   Promise.all([
     (0,_calls_fetchBookings_js__WEBPACK_IMPORTED_MODULE_0__.bookingsData)(),
   ])
     .then(data => {
-      console.log("here is bookings", data);
-      // const found = data.filter((x) => x.customers.some((y) => y.name === name));
-      // if (found.length > 0) {
-      //   user = name
-      //   loginPage.classList.add('hidden');
-      //   dashBoard.classList.remove('hidden');
-      // }
+      var foundBookings = (0,_sharedFunctions__WEBPACK_IMPORTED_MODULE_4__.hasRoomNumber)(data, _loginView__WEBPACK_IMPORTED_MODULE_3__.user);
+
+      currentData.innerHTML = ""
+
+      const found = foundBookings.sort((a, b) => {
+        return b.date - a.date
+      })
+
+      for (let i = 0; i < found.length; ++i) {
+        const foundRoom = rooms.filter((item) => {
+          return item.number === found[i].roomNumber
+        })
+
+        currentData.innerHTML += `<div tabindex=${i} class="dataSeporator"><label class="currentDate2">${found[i].date}</label> <label class="currentRoomNumber2">Room  ${found[i].roomNumber}</label> <label class="currentPrice2">$ ${foundRoom[0].costPerNight.toFixed(2)}</label></div> `
+        allTotals += foundRoom[0].costPerNight
+
+
+      }
+      currentTotal.innerHTML = `Total: $ ${allTotals.toFixed(2)}`
+
+      return foundBookings
     })
     .catch(err => console.log(err));
 }
 
-
-function checkForRooms(name) {
-  console.log("loginInput", name)
+// this is to access the rooms data
+function getAllRooms() {
   Promise.all([
     (0,_calls_fetchRooms_js__WEBPACK_IMPORTED_MODULE_1__.roomsData)(),
   ])
     .then(data => {
-      console.log("here is rooms", data)
-      // const found = data.filter((x) => x.customers.some((y) => y.name === name));
-      // if (found.length > 0) {
-      //   user = name
-      //   loginPage.classList.add('hidden');
-      //   dashBoard.classList.remove('hidden');
-      // }
+      rooms = data[0].rooms
+      return rooms
     })
     .catch(err => console.log(err));
 }
 
+// post to the dattaBase
+function selectedRoom(userId, roomNumber, year, month, day){
+  const holder = {
+    "userID": +userId,
+    "date": year + '/' + month + '/' + day,
+    "roomNumber": +roomNumber
+  }
+  //Here is where we use the post
+  ;(0,_calls_postResurvation__WEBPACK_IMPORTED_MODULE_2__.postData)(holder).then(() => {
+    alert(`Resurvation for Date of ${year + '/' + month + '/' + day} for Room ${roomNumber} Complete !!`)
+    // then re fetched for bookings
+    checkForBookings(_loginView__WEBPACK_IMPORTED_MODULE_3__.user)
+  })
+}
+
+function filterForRooms() {
+  const item = new Date(bookedDateInput.value)
+  if(isNaN(item.getFullYear()) || isNaN(item.getMonth() + 1) || isNaN((item.getDate() + 1))){
+    alert("need a proper date");
+    return ;
+  }
+  var foundRoomType = [];
+
+  if (roomTypeSelector.value === "allRoom") {
+    foundRoomType = rooms
+  } else {
+    foundRoomType = rooms.filter((item) => {
+      return item.roomType === roomTypeSelector.value
+    })
+  }
+  currentAvailData.innerHTML = ''
+
+  // comment this back to test for no rooms available
+  // foundRoomType = []
+  if (foundRoomType.length === 0) {
+    currentAvailData.innerHTML = '<div class="alertNoRooms">We are so sorry, there are no rooms Available on that date.</div>'
+  }
+
+  for (let i = 0; i < foundRoomType.length; ++i) {
+    var b=document.createElement('b')
+    b.value=i
+    b.onclick = function() {
+      selectedRoom( `${_loginView__WEBPACK_IMPORTED_MODULE_3__.user.id}`, `${foundRoomType[i].number}`, `${item.getFullYear()}`, `${item.getMonth() + 1}`, `${item.getDate() + 1}`)
+    }
+    b.onkeypress = function() {
+      selectedRoom( `${_loginView__WEBPACK_IMPORTED_MODULE_3__.user.id}`, `${foundRoomType[i].number}`, `${item.getFullYear()}`, `${item.getMonth() + 1}`, `${item.getDate() + 1}`)
+    }
+    b.innerHTML=`
+<div tabindex=${i} class="dataSeporator">
+<label class="currentDate2">Room ${foundRoomType[i].number}</label> 
+<label class="currentRoomNumber2">${foundRoomType[i].bedSize}</label> 
+<label class="currentPrice2">$ ${foundRoomType[i].costPerNight.toFixed(2)}</label> 
+</div>
+`
+    currentAvailData.appendChild(b)
+  }
+
+}
 
 
-checkForBookings(_loginView__WEBPACK_IMPORTED_MODULE_2__.user.id)
-checkForRooms(_loginView__WEBPACK_IMPORTED_MODULE_2__.user.id)
+checkForBookings()
+
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -639,7 +772,7 @@ const bookingsData = () => {
 };
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -662,6 +795,32 @@ const roomsData = () => {
     .catch(error => alert(`GET ERROR >>> STATUS ${error.status} - ${error.statusText}`));
   return data;
 };
+
+/***/ }),
+/* 18 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   postData: () => (/* binding */ postData)
+/* harmony export */ });
+const postData = (data) => {
+  return fetch(`http://localhost:3001/api/v1/bookings`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data),
+  })
+    .then(response => {
+      if (response.status !== 201) {
+        throw new Error(`POST ERROR: Resource not created >>> STATUS ${response.status} - ${response.statusText}`)
+      }
+      return response.json()
+    })
+    .then(data => data)
+    .catch(error => alert(`POST ERROR >>> STATUS ${error.status} - ${error.statusText}`))
+}
 
 /***/ })
 /******/ 	]);
@@ -744,7 +903,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _images_turing_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 /* harmony import */ var _loginView_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
-/* harmony import */ var _mainDashView_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var _mainDashView_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
 // This is the JavaScript entry file - your code begins here
 // Do not delete or rename this file ********
 
@@ -756,7 +915,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-console.log('This is the JavaScript entry file - your code begins here.');
 
 })();
 
