@@ -2,6 +2,7 @@ import {bookingsData} from './calls/fetchBookings.js';
 import {roomsData} from './calls/fetchRooms.js';
 import {postData} from './calls/postResurvation';
 import {user} from "./loginView";
+import {hasRoomNumber} from "./sharedFunctions";
 
 var rooms = []
 var allTotals = 0
@@ -71,9 +72,7 @@ function checkForBookings(userObject) {
     bookingsData(),
   ])
     .then(data => {
-      const foundBookings = data[0].bookings.filter((item) => {
-        return item.userID === user.id
-      })
+      var foundBookings = hasRoomNumber(data, user);
 
       currentData.innerHTML = ""
 

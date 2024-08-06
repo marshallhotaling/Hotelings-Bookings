@@ -1,4 +1,6 @@
 import { customerData } from './calls/fetchCustomers.js';
+import { seperateName, seperateNumber, hasUser } from './sharedFunctions.js'
+
 
 export var user = {};
 var loginButon = document.querySelector(".enterUserButton");
@@ -13,15 +15,6 @@ loginButon.addEventListener('click', showMainPage);
 function showMainPage() {
   console.log(loginInput.value, userPInput.value)
   checkHasUser(loginInput.value, userPInput.value);
-}
-
-function seperateName(name, numb) {
-  return name.replace(numb, '');
-}
-
-function seperateNumber(name) {
-  var numb = name.match(/\d/g);
-  return numb.join("");
 }
 
 function checkHasUser(name, password) {
@@ -43,17 +36,14 @@ function checkHasUser(name, password) {
     customerData(),
   ])
     .then(data => {
-      const found = data[0].customers.filter((item) => {
-        return item.name === username
-      })
-      if (found.length > 0) {
-        user = found[0]
+
+      const doesHaveUser = hasUser(data, username)
+      if (doesHaveUser !== false) {
+        user = doesHaveUser[0]
         loginPage.classList.add('hidden');
         dashBoard.classList.remove('hidden');
         homePage.classList.remove('hidden');
-        return true;
       }
-      return false
     })
     .catch(err => console.log(err));
 }
