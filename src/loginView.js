@@ -13,7 +13,6 @@ var userPInput = document.querySelector(".userPInput")
 loginButon.addEventListener('click', showMainPage);
 
 function showMainPage() {
-  console.log(loginInput.value, userPInput.value)
   checkHasUser(loginInput.value, userPInput.value);
 }
 

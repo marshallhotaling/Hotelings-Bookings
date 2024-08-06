@@ -64,9 +64,7 @@ function hideViews() {
   homePage.classList.add("hidden")
 }
 
-function checkForBookings(userObject) {
-
-  console.log('userObject', userObject)
+function checkForBookings() {
   getAllRooms()
   Promise.all([
     bookingsData(),
@@ -111,7 +109,6 @@ function getAllRooms() {
 
 // post to the dattaBase
 function selectedRoom(userId, roomNumber, year, month, day){
-  console.log('selectedRoom', userId, roomNumber, year, month, day)
   const holder = {
     "userID": +userId,
     "date": year + '/' + month + '/' + day,

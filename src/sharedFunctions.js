@@ -23,7 +23,6 @@ export function hasRoomNumber(data, user) {
     return item.userID === user.id
   })
   if (foundBookings.length > 0) {
-    console.log('foundBookings', user)
 
     return foundBookings
   }
